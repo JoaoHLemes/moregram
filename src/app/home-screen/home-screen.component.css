@@ -1,0 +1,111 @@
+.item1{
+    max-width: 100%;
+    grid-area: "item1";
+    grid-column: item1;
+}
+.item2{
+    max-width: 100%;
+    max-height: 100%;     
+    grid-area: "item2";
+    grid-column: item2;
+}
+.item4{
+    padding-left: 50px;
+    max-width: max-content;
+    min-width: min-content;
+    grid-area: "item4";
+    grid-column: item4;
+    grid-row: item4;
+    
+}
+img{
+    width: 100%;
+    height: auto;
+}
+.container{
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(2,0,36,0) 84%, rgba(125,122,199,0) 86%, rgba(82,77,218,0.2945553221288515) 100%);
+    height: min-content; 
+    margin-top: 30px;
+    padding: 100px;
+    padding-top: 30px;
+    max-width: 100%;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "item1 item1 item4"
+    "item2 item2 item4"
+    "item3 item3 item4";
+}
+@media (max-width: 1300px){
+    .container{
+    padding-top: 0px;
+    padding: 0px;
+    justify-content: center;
+    grid-template-areas:
+    "item1 item4"
+    "item2 item4"  
+}
+} 
+@media (max-width: 1000px){
+    .container{
+    justify-content: center;
+    text-align: center;
+    grid-template-areas:
+    "item12"
+    "item13"
+    "item14"
+    "item15"
+}
+}
+@media (max-width: 1300px){
+    .item1{
+    margin-left: 50px;
+}
+}
+@media (max-width: 1000px){
+    .item1{
+    margin-top: 0px;
+    margin-left: 0px;
+}
+}
+@media (max-width: 1300px){
+    .item2{
+    max-width: 100%;
+    margin-left: 50px;
+}
+}
+@media (max-width: 1000px){
+    .item2{
+    margin-top: 0px;
+    margin-left: 0px;
+}
+}
+@media (max-width: 1300px){
+    .item3{
+    margin-left: 50px;
+    max-width: 100%;
+}
+}
+@media (max-width: 1000px){
+    .item3{
+     margin-top: 0px;
+    margin-left: 0px;
+}
+}
+.container p{
+    color: #343F52;
+    font-size: 17px;
+    font-family: sans-serif;
+}
+.button2{
+    background-image: linear-gradient(to right, #4CB8C4 0%, #3CD3AD  51%, #4CB8C4  100%);
+    border: none;
+    border-radius: 10px;
+    width: 160px;
+    height: 58.89px;
+    font-size: 17px;
+    font-family: sans-serif;
+    color: white;
+    cursor: pointer;
+}

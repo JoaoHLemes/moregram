@@ -1,0 +1,37 @@
+.navbar{
+    margin-top: 20px;
+    justify-content: space-between;
+    background-color: white;
+    display:flex;
+      
+}
+.colum{
+    text-align: center;
+    background-color: white;
+    width: 30%;
+    
+}
+.img{
+    position:static;
+    image-resolution: 100%;
+    
+}
+.btn-group{
+    color: #343F52;
+    margin-left: 10%;
+    background-color: white;
+    width: 70%;
+}
+.btn-group button{
+    font-family:sans-serif;
+    margin-top: 10px;
+    border:none;
+    font-size: 17px;
+    background-color: transparent;
+    height: 30px;
+    width: 82px;
+    cursor: pointer;
+}
+.btn-group button:hover {
+    color: #605DBA;
+  }
